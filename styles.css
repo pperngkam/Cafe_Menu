@@ -1,0 +1,261 @@
+body {
+    background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+    font-family: sans-serif;
+    padding: 2%;
+  }
+  
+  h1 {
+    font-size: 2.5em;
+    margin-top: 0;
+    margin-bottom: 1em;
+  }
+  
+  h2 {
+    font-size: 1.875em;
+  }
+  
+  h3 {
+    margin-bottom: 1em;
+  }
+  
+  .established {
+    font-style: italic;
+  }
+  
+  h1,
+  h2,
+  p {
+    text-align: center;
+  }
+  
+  .container {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    margin-top: -1em;
+  }
+  
+  .navbar {
+    background-color: peru;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 9%;
+    padding-right: 9%;
+    height: 5em;
+  }
+  
+  .nav-logo {
+    width: 3em;
+    padding: 1em;
+    margin-top: 0em;
+    margin-left: 0em;
+    margin-right: 0em;
+  }
+  
+  .nav-menu {
+    font-weight: 600;
+    padding-top: 1em;
+    margin-left: 0em;
+    margin-right: 0em;
+  }
+  
+  .nav-language-btn {
+    background-color: peru;
+    border: none;
+    color: black; /* Adjust the text color as needed */
+    font-weight: 600;
+    font-size: 1em;
+    padding-top: 0.25em;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .nav-item {
+    display: flex;
+  }
+  
+  .menu {
+    width: 80%;
+    background-color: burlywood;
+    margin: 3em auto 3em;
+    padding: 2%;
+    max-width: 31.25em;
+  }
+  
+  img {
+    display: block;
+    margin: 0 auto;
+    margin-top: -1.5625em;
+  }
+  
+  hr {
+    height: 0.125em;
+    background-color: brown;
+    border-color: brown;
+  }
+  
+  .bottom-line {
+    margin-top: 1.5625em;
+  }
+  
+  h1,
+  h2 {
+    font-family: Impact, serif;
+  }
+  
+  .item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.125em;
+    line-height: 0;
+  }
+  
+  .flavor,
+  .dessert {
+    text-align: left;
+    width: 75%;
+  }
+  
+  .price {
+    text-align: right;
+    width: 25%;
+  }
+  
+  a {
+    color: black;
+  }
+  
+  a:visited {
+    color: black;
+  }
+  
+  a:hover {
+    color: brown;
+  }
+  
+  a:active {
+    color: brown;
+  }
+  
+  /* FOOTER */
+  
+  .footer {
+    background-color: peru;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 9em;
+    font-size: 0.875em;
+    position: static;
+    bottom: 0;
+    width: 100%;
+    flex-wrap: nowrap;
+    box-sizing: border-box;
+  }
+  
+  .footer-item {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    flex-grow: 1;
+    align-items: center;
+  }
+  
+  .footer-item h3:hover,
+  .footer-item p:hover {
+    color: white;
+  }
+  
+  .footer-content {
+    line-height: 0;
+  }
+  
+  .footer-address {
+    text-align: center;
+    font-size: 0.7em;
+  }
+  
+  .google-map-iframe {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 8em;
+    height: 8em;
+    border: 0;
+    padding-top: 1em;
+  }
+  
+  /* Mobiles — 420px. */
+  @media all and (max-width: 420px) {
+    .navbar {
+      justify-content: center;
+      margin-left: -5%;
+    }
+  
+    .nav-logo {
+      margin-left: 5%;
+      margin-right: 5%;
+    }
+  
+    .footer {
+      flex-wrap: wrap;
+    }
+  
+    .footer-item .footer-content {
+      line-height: 0;
+      margin-bottom: 0;
+    }
+  
+    .footer-item h3.footer-content {
+      line-height: 1;
+    }
+  
+    .google-map-iframe {
+      margin-top: 1em;
+    }
+  }
+  
+  /* iPads and Tablets — 768px. */
+  @media all and (max-width: 768px) {
+    .navbar {
+      justify-content: space-between;
+      padding-left: 2em;
+      padding-right: 2em;
+      display: flex;
+    }
+    .footer {
+      flex-wrap: wrap;
+    }
+  
+    .footer-item .footer-content {
+      line-height: 0;
+      margin-bottom: 0;
+    }
+  
+    .footer-item h3.footer-content {
+      line-height: 1;
+    }
+    .google-map-iframe {
+      margin-top: 1em;
+    }
+  }
+  
+  /* Laptops and small screen — 1024px. */
+  @media all and (max-width: 1024px) {
+    .navbar {
+      justify-content: space-between;
+      padding-left: 4em;
+      padding-right: 4em;
+    }
+  }
+  
+  /* Large screens and Desktops — 1200px. */
+  @media all and (max-width: 1200px) {
+    .navbar {
+      justify-content: space-between;
+      padding-left: 8em;
+      padding-right: 8em;
+    }
+  }
+  
